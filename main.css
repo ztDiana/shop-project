@@ -1,0 +1,121 @@
+.col-md-12{
+    width: 100%;
+}
+.col-md-8{
+    width: 66.7%;}
+.col-md-4{
+    width: 33.3%;}
+
+.page-name{
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.breadcrumps{
+    height: 76px;
+    line-height: 76px;
+    font-size: 14px;
+    color: #96b8dc;}
+.breadcrumps>a{
+    color: #96b8dc;
+    text-decoration: none;
+}
+.breadcrumps>a:hover{
+    text-decoration:#96b8dc underline;}
+
+.product{
+    border: 1px solid white;
+    margin: 30px 0;
+    background-color: rgba(44, 113, 184, 0.749);
+}
+.product>div{
+    border: 1px solid white;
+}
+.product-image{
+    height: 180px;
+    background-color: #cfdfef;
+    position: relative;
+}
+.product-image>div{
+    width: 30px;
+    height: 30px;
+    background-color: unset;
+    border: 1px solid #548cc5;
+    position: absolute;
+    right: 10px;
+}
+.product-image>img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.zoom{
+    top: 10px;
+    background: url(images/icon\ \(8\).png) no-repeat 50% 50%;}
+.like{
+    top: 50px;
+    background: url(images/icon\ \(5\).png) no-repeat 50% 50%;}
+.zoom:hover{
+    background: #2c71b8 url(images/icon\ \(6\).png) no-repeat 50% 50%;}
+.like:hover{
+    background: #2c71b8 url(images/icon\ \(7\).png) no-repeat 50% 50%;}
+
+.product-body{
+    color: white;
+    font-size: 21px;
+    padding: 15px;}    
+.product-body .product-title{
+    font-size: 30px;
+    font-weight: bold;
+margin-bottom: 10px;}
+.product-description{
+    line-height: initial;}
+.product-features p {
+    margin: 20px 0px;}
+.product-features strong{
+    font-weight: bold;}
+.product-price{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;}
+.product-price span{
+    font-size: 24px;
+    vertical-align: super;
+margin: 0px 5px;}
+.btn{
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+    background-color: #2c71b8;
+    color: white;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;}
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.404)
+}
+.product-body>.btn-add-to-cart{
+    background: url(images/icon\ \(2\).png) no-repeat 90% 50%;
+    background-color: rgba(255, 255, 255, 0.2);}
+.product-body>.btn-add-to-cart:hover{
+    background-color: rgba(255, 255, 255, 0.404)}
+.btn-load-more{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color:#fff;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    background-color: unset;
+    margin: 30px 0;
+}
+.btn-load-more:hover{background-color: rgba(255, 255, 255, 0.404)}
