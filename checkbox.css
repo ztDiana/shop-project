@@ -87,8 +87,9 @@
     height: 400px;
     line-height: 400px;}
 .arrow img:hover{
-    box-shadow: 0 0 15px -3px #fff;
-    border-radius: 6px;}
+transform: scale(1.5);
+transition: 1s;
+z-index: 5;}
 
 .slide-2 .slide-3 .slide-4{
     display: none;
