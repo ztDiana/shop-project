@@ -118,7 +118,9 @@ margin: 0px 5px;}
     background-color: unset;
     margin: 30px 0;
 }
-.btn-load-more:hover{background-color: rgba(255, 255, 255, 0.404)}
+.btn-load-more:hover{background-color: rgba(255, 255, 255, 0.219);
+box-shadow: 0 0 5px #fff;}
+
 /* ------select------ */
 .select{
     position: relative;
