@@ -37,8 +37,6 @@ body{
 }
 .col-md-3{
     width: 25%;
-    height: 50px;
-    line-height: 50px;
     position: relative;
 }
 

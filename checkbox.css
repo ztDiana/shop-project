@@ -1,0 +1,33 @@
+.sidebar-filter{
+    border: 1px solid #fff;
+    background-color: rgb(255, 255, 255,0.2);
+    padding: 30px 25px;
+    color: #fff;
+    font-size: 21px;}
+/* ------filter------ */
+.filter-name{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.filter{
+    margin-bottom: 60px ;
+}
+.sidebar-filter .last-filter{
+    margin-bottom: 20px;
+}
+.filter-item{
+    margin-bottom: 20px;
+}
+/* ------filter------ */
+.sidebar-filter .btn-show-more-options{
+    text-transform: none;
+    background-color: unset;
+    border: none;
+}
+.sidebar-filter .btn-show-more-options:hover{
+    background-color: rgba(255, 255, 255, 0.404)
+}
+/* --------------style ckeckbox----------- */
+
+
+/* --------------style ckeckbox----------- */
