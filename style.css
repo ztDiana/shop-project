@@ -165,3 +165,16 @@ z-index: 5;
 .search input[type="button"]:hover{
     background: #ffffff url(images/icon\ \(4.1\).png) no-repeat 50% 50%;
 }
+footer{
+    background-color: rgb(255, 255, 255, 0.749);
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+  }
+.footer{
+    color:#2c71b8;
+    font-size: 21px;
+}
+
+  
+  
