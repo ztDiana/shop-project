@@ -27,7 +27,70 @@
 .sidebar-filter .btn-show-more-options:hover{
     background-color: rgba(255, 255, 255, 0.404)
 }
-/* --------------style ckeckbox----------- */
-
 
 /* --------------style ckeckbox----------- */
+.sidebar-filter label{
+    margin-left: 10px;
+}
+.sidebar-filter label:hover {
+    color: whitesmoke;
+    text-shadow:0 0 5px white;
+}
+.sidebar-filter label::before{
+    content: '';
+    display: block;
+    width: 10px;height: 10px;
+    border: 1px solid white;
+    position: relative;
+    top: 3px;
+    float: left;
+}
+.filter-checkbox{display: none;}
+.filter-checkbox:checked + label::before{
+    background-color: #fff;
+}
+.filter-item::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* --------------style ckeckbox----------- */
+/* ----slider----- */
+.sliders{
+    background-color: rgb(0, 0, 0, 0.2);
+    border-bottom: 1px solid #fff;}
+.sl{
+    text-align: center;
+    height: 300px;
+    line-height: 350px;}
+.slide{
+    font-size: 100px;
+    color: white;
+    font-weight: 100;
+    letter-spacing:8px;
+    text-decoration: none;}
+.slide-buttons{
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;}
+.btn-slide {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    background-color: unset;
+    padding: 0px;
+    margin: 0 15px;}    
+.btn-slide:hover{
+    background-color: #fff;}
+.arrow {
+    height: 400px;
+    line-height: 400px;}
+.arrow img:hover{
+    box-shadow: 0 0 15px -3px #fff;
+    border-radius: 6px;}
+
+.slide-2 .slide-3 .slide-4{
+    display: none;
+}
+/* ----slider----- */

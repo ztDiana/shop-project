@@ -35,6 +35,9 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
+.col-md-1 {
+    width: 8.333%;
+} 
 .col-md-3{
     width: 25%;
     position: relative;
@@ -45,6 +48,9 @@ body{
 }
 .col-md-9{
     width: 75%;
+}
+.col-md-10{
+    width: 83.333%;
 }
 .menu li{
     width: 25%;
@@ -156,4 +162,6 @@ z-index: 5;
     position: absolute;
     top: -10px;
     left: -10px;}
-   
+.search input[type="button"]:hover{
+    background: #ffffff url(images/icon\ \(4.1\).png) no-repeat 50% 50%;
+}
