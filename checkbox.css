@@ -79,11 +79,12 @@
     display: block;
     clear: both;
 }
-.slide-buttons>div{height: 100%;
+.slide-buttons>div{height: 100px;
 width: 160px;
-left: 0px; right: 0px;
-margin-left: auto;
-margin-right: auto;}
+left: 0px; right: 0px; top: 0; bottom: 0px;
+margin: auto;
+padding-top: 60px;
+}
 .btn-slide {
     width: 10px;
     height: 10px;
