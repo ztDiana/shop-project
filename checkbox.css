@@ -74,13 +74,25 @@
     text-align: center;
     height: 100px;
     line-height: 100px;}
+.slide-buttons::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.slide-buttons>div{height: 100%;
+width: 160px;
+left: 0px; right: 0px;
+margin-left: auto;
+margin-right: auto;}
 .btn-slide {
     width: 10px;
     height: 10px;
     border: 1px solid #fff;
     background-color: unset;
     padding: 0px;
-    margin: 0 15px;}    
+    margin: 0 15px;
+    float: left;} 
+
 .btn-slide:hover{
     background-color: #fff;}
 .arrow {
