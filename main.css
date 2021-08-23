@@ -40,7 +40,6 @@
 .product-image>div{
     width: 30px;
     height: 30px;
-    background-color: unset;
     border: 1px solid #548cc5;
     position: absolute;
     right: 10px;
@@ -63,6 +62,9 @@
     background: #2c71b8 url(images/icon\ \(6\).png) no-repeat 50% 50%;}
 .like:hover{
     background: #2c71b8 url(images/icon\ \(7\).png) no-repeat 50% 50%;}
+.clicked-like{
+    background: #2c71b8 url(images/icon\ \(7\).png) no-repeat 50% 50%;
+}
 
     
 .product-body{
