@@ -24,7 +24,7 @@ like.forEach(item => (item.addEventListener("click", function(){
 let more_details_btn=document.querySelectorAll(".btn-more-details");
 let modal=document.querySelector(".modal");
 let closeModal_btn=document.querySelector(".btn-close");
-let closedModal=modal
+
 more_details_btn.forEach(item=> 
         item.addEventListener("click", function (){     
                 document.body.appendChild(modal)
@@ -60,3 +60,8 @@ window.addEventListener("scroll",function(){
 closeModal_btn.addEventListener("click", function(){
         modal.remove()
 });
+modal.addEventListener("click", function(e){
+        if(e.target===modal){
+                modal.remove() 
+        }
+})
