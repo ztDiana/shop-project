@@ -33,6 +33,9 @@ more_details_btn.forEach(item=>
         );
 closeModal_btn.addEventListener("click", close);
 
+let closeStopEvent=closeModal_btn.addEventListener("click",function(event){
+        event.cancelBubble
+})
 
 
 function open(){
@@ -50,19 +53,19 @@ modal.addEventListener("click", function(e){
                 close();      
         }
 })
-window.addEventListener("scroll",function(){
+function scrollShowModal(event) {
         if(window.pageYOffset>= document.body.clientWidth/2){
-                open()
-        }
-})
+                open();
+        }    
+}
+window.addEventListener("scroll", scrollShowModal,{once:true})
 
-console.log(document.body.clientWidth)
-console.log(document.body.clientHeight)
-closeModal_btn.addEventListener("click", function(){
-        modal.remove()
-});
-modal.addEventListener("click", function(e){
-        if(e.target===modal){
-                modal.remove() 
-        }
-})
+// closeModal_btn.addEventListener("click", function(){
+//         modal.remove()
+// });
+// modal.addEventListener("click", function(e){
+//         if(e.target===modal){
+//                 modal.remove() 
+//         }
+// })
+
