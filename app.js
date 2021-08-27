@@ -1,8 +1,6 @@
 let productsCountEl=document.querySelector(".products-count")
-console.log(productsCountEl);
 
 let addToCartBtns=document.querySelectorAll(".btn-add-to-cart");
-console.log(addToCartBtns);
 
 addToCartBtns.forEach(item => ( item.addEventListener("click",function(){
         productsCountEl.textContent=+productsCountEl.textContent+1
@@ -53,10 +51,13 @@ modal.addEventListener("click", function(e){
         }
 })
 window.addEventListener("scroll",function(){
-        if(window.pageYOffset>=300){
+        if(window.pageYOffset>= document.body.clientWidth/2){
                 open()
         }
 })
+
+console.log(document.body.clientWidth)
+console.log(document.body.clientHeight)
 closeModal_btn.addEventListener("click", function(){
         modal.remove()
 });
