@@ -53,12 +53,21 @@ modal.addEventListener("click", function(e){
                 close();      
         }
 })
-function scrollShowModal(event) {
-        if(window.pageYOffset>= document.body.clientWidth/2){
-                open();
-        }    
-}
-window.addEventListener("scroll", scrollShowModal,{once:true})
+
+function ShowModalByScroll() {
+        if (window.pageYOffset>=document.body.scrollHeight/2) {
+                open()
+                window.removeEventListener("scroll",ShowModalByScroll)
+        }
+};
+window.addEventListener("scroll",ShowModalByScroll)
+
+// function scrollShowModal(event) {
+//         if(window.pageYOffset>= document.body.clientWidth/2){
+//                 open();
+//         }    
+// }
+// window.addEventListener("scroll", scrollShowModal,{once:true})
 
 // closeModal_btn.addEventListener("click", function(){
 //         modal.remove()
