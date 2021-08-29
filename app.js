@@ -62,19 +62,56 @@ function ShowModalByScroll() {
 };
 window.addEventListener("scroll",ShowModalByScroll)
 
-// function scrollShowModal(event) {
-//         if(window.pageYOffset>= document.body.clientWidth/2){
-//                 open();
-//         }    
-// }
-// window.addEventListener("scroll", scrollShowModal,{once:true})
+// change product quantity
+let product_quantity=document.body.querySelectorAll(".product-quantity")
+console.log(product_quantity);
 
-// closeModal_btn.addEventListener("click", function(){
-//         modal.remove()
-// });
-// modal.addEventListener("click", function(e){
-//         if(e.target===modal){
-//                 modal.remove() 
-//         }
-// })
+product_quantity.forEach(item => item.style.marginBottom="20px" )
 
+let decrement_buttons=document.body.querySelectorAll(".decrement-button")[0];
+
+console.log(decrement_buttons);
+
+let increment_buttons=document.body.querySelectorAll(".increment-button")[0];
+console.log(increment_buttons);
+
+let quantityInput=document.body.querySelectorAll(".product-quantity input")[0];
+let quantityValue= quantityInput.value;
+console.log(quantityValue);
+
+let a=Array.prototype.slice.call(document.body.querySelectorAll(".product-quantity input"))
+
+        //         for (let i = 0; i < quantityInput.length; i++) {
+        //                 console.log(quantityInput[i].value)
+        //         }
+        // }
+
+function increasequantityInput() {
+      let currentValue=+quantityInput.value
+        let nextValue=currentValue+1;
+        quantityInput.value=nextValue;
+        quantityInput.removeAttribute("disabled")
+        if(nextValue<=1){
+                decrement_buttons.disabled=true;
+        }
+        else if(nextValue>=5){
+                increment_buttons.disabled=true
+        }
+        else{ decrement_buttons.disabled=false;}
+}
+
+increment_buttons.addEventListener("click", increasequantityInput);
+
+
+function minusquantityInput() {
+        let currentValue=+quantityInput.value;
+        let nextValue=currentValue-1;
+          quantityInput.value=nextValue;
+          if(nextValue<2){
+                  decrement_buttons.disabled=true;
+          }
+          else if (nextValue<=5) {
+                increment_buttons.removeAttribute("disabled")}
+          else{ decrement_buttons.disabled=false;}
+  }
+  decrement_buttons.addEventListener("click", minusquantityInput)
